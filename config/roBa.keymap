@@ -57,14 +57,14 @@
         mac_setup: osx_setup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &tog 0>;
+            bindings = <&bt BT_SEL 0 &tog 2>;
             label = "OSX_SETUP";
         };
 
         win_setup: win_setup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &tog 1>;
+            bindings = <&bt BT_SEL 1 &tog 0>;
             label = "WIN_SETUP";
         };
     };
@@ -72,26 +72,26 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer_mac {
-            bindings = <
-&kp Q           &kp W         &kp E             &kp R                    &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A     &kp S         &kp D             &kp F                    &kp G        &mkp MCLK      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X         &kp C             &kp V                    &lt 4 B      &none          &kp SLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_GUI LANGUAGE_2  &lt 2 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LG(LS(N5))
-            >;
-
-            sensor-bindings = <&encoder_msc_up_down>;
-        };
-
         default_layer_win {
             bindings = <
 &kp Q           &kp W         &kp E         &kp R                        &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D         &kp F                        &kp G        &mkp MCLK      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X         &kp C         &kp V                        &lt 4 B      &none          &kp SLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_CONTROL LANGUAGE_2  &lt 2 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LG(LS(S))
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_CONTROL LANGUAGE_2  &lt 3 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LG(LS(S))
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
+        };
+
+        default_layer_mac {
+            bindings = <
+&kp Q           &kp W         &kp E             &kp R                    &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A     &kp S         &kp D             &kp F                    &kp G        &mkp MCLK      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X         &kp C             &kp V                    &lt 4 B      &none          &kp SLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_GUI LANGUAGE_2  &lt 3 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LG(LS(N5))
+            >;
+
+            sensor-bindings = <&encoder_msc_up_down>;
         };
 
         cursor {
@@ -109,7 +109,7 @@
             bindings = <
 &kp SQT        &kp N7        &kp N8        &kp N9          &kp LEFT_PARENTHESIS                      &kp RIGHT_PARENTHESIS  &none               &none               &none                &trans
 &kp GRAVE      &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp LEFT_BRACKET      &none       &trans  &kp RIGHT_BRACKET      &none               &kp LS(UP_ARROW)    &none                &trans
-&kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp LEFT_BRACE        &tog 1      &trans  &kp RIGHT_BRACE        &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans
+&kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp LEFT_BRACE        &tog 0      &trans  &kp RIGHT_BRACE        &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans
 &trans         &kp N0        &trans        &kp LANGUAGE_1  &trans                &trans      &trans  &trans                                                                              &trans
             >;
         };
