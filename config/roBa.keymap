@@ -31,7 +31,14 @@
 &mkp_input_listener { input-processors = <&zip_temp_layer 2 250>; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        q_w_q {
+            bindings = <&kp Q>;
+            key-positions = <0 1>;
+        };
+    };
 
     behaviors {
         encoder_msc_up_down: encoder_msc_up_down {
