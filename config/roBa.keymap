@@ -125,7 +125,7 @@
 
         terraria {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R      &kp T                             &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp ESCAPE      &kp W         &kp E         &kp R      &kp T                             &kp Y   &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D         &kp F      &kp G      &trans       &kp SEMI  &kp H   &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X         &kp C         &kp V      &kp B      &tog 1       &kp FSLH  &kp N   &kp M  &kp COMMA  &kp DOT  &kp EQUAL
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &kp SPACE  &kp TAB      &trans    &trans                             &trans
