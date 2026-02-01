@@ -109,7 +109,7 @@
             bindings = <
 &kp SQT        &kp N7        &kp N8        &kp N9          &kp LEFT_PARENTHESIS                      &kp RIGHT_PARENTHESIS  &none               &none               &none                &trans
 &kp GRAVE      &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp LEFT_BRACKET      &none       &trans  &kp RIGHT_BRACKET      &none               &kp LS(UP_ARROW)    &none                &trans
-&kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp LEFT_BRACE        &tog 1      &trans  &kp RIGHT_BRACE        &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans
+&kp BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp LEFT_BRACE        &none       &trans  &kp RIGHT_BRACE        &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans
 &trans         &kp N0        &trans        &kp LANGUAGE_1  &trans                &trans      &trans  &trans                                                                              &trans
             >;
         };
@@ -125,10 +125,10 @@
 
         terraria {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R      &kp T                             &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D      &kp F      &kp G      &trans       &kp SEMI  &kp H   &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X         &kp C      &kp V      &kp B      &tog 5       &kp FSLH  &kp N   &kp M  &kp COMMA  &kp DOT  &kp EQUAL
-&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &kp LCTRL  &kp SPACE  &kp TAB      &trans    &trans                             &trans
+&kp Q           &kp W         &kp E         &kp R      &kp T                             &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D         &kp F      &kp G      &trans       &kp SEMI  &kp H   &kp J  &kp K      &kp L    &kp MINUS
+&kp Z           &kp X         &kp C         &kp V      &kp B      &tog 1       &kp FSLH  &kp N   &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &kp SPACE  &kp TAB      &trans    &trans                             &trans
             >;
         };
     };
