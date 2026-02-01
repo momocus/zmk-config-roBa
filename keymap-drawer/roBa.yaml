@@ -72,7 +72,7 @@ layers:
   - C
   - V
   - {t: B, h: bluetooth}
-  - ''
+  - {t: terraria, h: toggle}
   - /
   - N
   - M
@@ -160,7 +160,7 @@ layers:
   - '2'
   - '3'
   - '{'
-  - {t: default_layer_win, h: toggle}
+  - ''
   - {t: ▽, type: trans}
   - '}'
   - Sft+LEFT ARROW
@@ -220,3 +220,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - BT CLR ALL
+  terraria:
+  - ESCAPE
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: ▽, type: trans}
+  - ;
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: default_layer_win, h: toggle}
+  - /
+  - N
+  - M
+  - ','
+  - .
+  - '='
+  - LEFT SHIFT
+  - LEFT ALT
+  - LEFT WIN
+  - LCTRL
+  - SPACE
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [0, 1]
+  k: Q
