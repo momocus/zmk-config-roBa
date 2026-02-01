@@ -87,7 +87,7 @@
             bindings = <
 &kp Q           &kp W         &kp E         &kp R                        &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D         &kp F                        &kp G        &mkp MCLK      &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X         &kp C         &kp V                        &lt 4 B      &none          &kp SLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp Z           &kp X         &kp C         &kp V                        &lt 4 B      &tog 5         &kp SLASH      &kp N        &kp M  &kp COMMA  &kp DOT  &kp EQUAL
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_GUI  &mt LEFT_CONTROL LANGUAGE_2  &lt 2 SPACE  &kp TAB        &kp BACKSPACE  &lt 3 ENTER                             &kp LG(LS(S))
             >;
 
@@ -123,11 +123,11 @@
             >;
         };
 
-        layer_5 {
+        terraria {
             bindings = <
 &kp Q           &kp W         &kp E      &kp R      &kp T                             &kp Y   &kp U  &kp I      &kp O    &kp P
 &kp A           &kp S         &kp D      &kp F      &kp G      &trans       &kp SEMI  &kp H   &kp J  &kp K      &kp L    &kp MINUS
-&kp Z           &kp X         &kp C      &kp V      &kp B      &trans       &kp FSLH  &kp N   &kp M  &kp COMMA  &kp DOT  &kp EQUAL
+&kp Z           &kp X         &kp C      &kp V      &kp B      &tog 5       &kp FSLH  &kp N   &kp M  &kp COMMA  &kp DOT  &kp EQUAL
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LCTRL  &kp LCTRL  &kp SPACE  &kp TAB      &trans    &trans                             &trans
             >;
         };
