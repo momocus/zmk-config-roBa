@@ -112,9 +112,9 @@ layers:
   - '&mkp RCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+Sft+TAB
+  - Ctl+LEFT ARROW
   - Ctl+DOWN
-  - Gui+TAB
+  - Ctl+RIGHT ARROW
   - {t: ▽, type: trans}
   - CAPSLOCK
   - {t: ▽, type: trans}
