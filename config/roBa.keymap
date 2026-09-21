@@ -78,7 +78,12 @@
         grip_window: grip_window {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LG(LCTRL) &mkp LCLK>;
+            bindings =
+                <&macro_press>,
+                <&kp LG(LCTRL) &mkp LCLK>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mkp LCLK &kp LG(LEFT_CONTROL)>;
 
             label = "GRIP_WINDOW";
         };
