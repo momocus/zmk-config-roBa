@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - {t: B, h: bluetooth}
-  - ''
+  - Gui+LEFT CONTROL
   - /
   - N
   - M
