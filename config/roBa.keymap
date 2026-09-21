@@ -82,7 +82,7 @@
                 <&macro_press>,
                 <&kp LG(LCTRL) &mkp LCLK>,
                 <&macro_release>,
-                <&kp LG(LCTRL) &mkp LCLK>;
+                <&mkp LCLK &kp LG(LCTRL)>;
 
             label = "GRIP_WINDOW";
         };
