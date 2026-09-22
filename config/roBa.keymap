@@ -35,8 +35,13 @@
         compatible = "zmk,combos";
 
         q_w_q {
-            bindings = <&kp Q>;
+            bindings = <&kp ESC>;
             key-positions = <0 1>;
+        };
+
+        globe {
+            bindings = <&kp GLOBE>;
+            key-positions = <16 28>;
         };
     };
 
@@ -149,6 +154,15 @@
 &kp A           &kp S         &kp D         &kp F      &kp G      &trans       &kp SEMI  &kp H   &kp J  &kp K      &kp L    &kp MINUS
 &kp Z           &kp X         &kp C         &kp V      &kp B      &tog 1       &kp FSLH  &kp N   &kp M  &kp COMMA  &kp DOT  &kp EQUAL
 &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_WIN  &kp LCTRL  &kp SPACE  &kp TAB      &trans    &trans                             &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
